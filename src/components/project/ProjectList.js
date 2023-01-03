@@ -19,7 +19,6 @@ function ProjectList(){
 
     },[projectStatus,dispatch]
     );
-
     let content;
 
     if(projectStatus === 'loading'){
