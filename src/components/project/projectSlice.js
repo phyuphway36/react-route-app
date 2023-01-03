@@ -9,6 +9,9 @@ const POST_NEW_PROJECT ='http://localhost:8383/api/project/create';
     return response.data;
 });
 
+
+
+
 export const addNewProject = createAsyncThunk('projets/addNewProject',async (initialProject)=>{
     const response = await axios.post(POST_NEW_PROJECT,initialProject)
     return response.data
